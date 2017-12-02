@@ -1,0 +1,13 @@
+{% set title = 'Show Movies' %}
+{% extends '_layout.html' %}
+
+{% block content %}
+<h1>Movies</h1>
+<ul>
+    {% for movie in movies %}
+        <li>{{movie.title}}</li>
+    {% else %}
+        <li>No hay peliculas guardadas</li>
+    {% endfor %}
+</ul>
+{% endblock %}

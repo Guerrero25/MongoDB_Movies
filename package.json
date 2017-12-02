@@ -1,0 +1,17 @@
+{
+  "name": "challenge_problem",
+  "version": "1.0.0",
+  "description": "quiz extra para el curso de mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omar Guerrero",
+  "license": "MIT",
+  "dependencies": {
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "nunjucks": "^3.0.1"
+  }
+}
