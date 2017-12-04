@@ -5,9 +5,16 @@
 <h1>Movies</h1>
 <ul>
     {% for movie in movies %}
-        <li>{{movie.title}}</li>
+        <li>
+            <span>Title: </span>{{ movie.title }} <br>
+            <span>Year: </span> {{ movie.year }} <br>
+            <span>IMDB: </span> {{ movie.imdb }} <br>
+            <a href="/movies/{{movie.title}}">Edit</a>
+            <a href="/movies/delete/{{movie.title}}"> Delete</a>
+        </li>
     {% else %}
         <li>No hay peliculas guardadas</li>
     {% endfor %}
 </ul>
+<a href="/movies/new" >New</a>
 {% endblock %}

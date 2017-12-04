@@ -1,0 +1,16 @@
+{% set title = 'Edit Movie' %}
+{% extends '_layout.html' %}
+
+{% block content %}
+<h1>Edit Movie</h1>
+<form action="/movies/{{movie.title}}" method="post">
+    <label for="title">Title: </label> <br>
+    <input type="text" value="{{movie.title}}" name="title" placeholder="{{movie.title}}" > <br>
+    <label for="year">Year: </label> <br>
+    <input type="text" value="{{movie.year}}" name="year" placeholder="{{movie.year}}" > <br>
+    <label for="imdb">IMDB: </label> <br>
+    <input type="text" value="{{movie.imdb}}" name="imdb" placeholder="{{movie.imdb}}" > <br>
+    <input type="submit" value="Update">
+    <a href="/">Back</a>
+</form>
+{% endblock %}

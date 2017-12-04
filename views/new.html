@@ -1,0 +1,17 @@
+{% set title = 'New Movie' %}
+{% extends '_layout.html' %}
+
+{% block content %}
+<h1>New Movie</h1>
+<form action="/movies" method="post">
+    <label for="title">Title</label> <br>
+    <input type="text" name="title" id="title" > <br>
+    <label for="year">Year</label> <br>
+    <input type="text" name="year" id="year" > <br>
+    <label for="imdb">IMGB</label> <br>
+    <input type="text" name="imdb" id="imdb" > <br>
+    <input type="submit">
+    <a href="/">Back</a>
+</form>
+
+{% endblock %}

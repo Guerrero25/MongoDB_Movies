@@ -1,0 +1,11 @@
+{% set title = 'Show Movie' %}
+{% extends '_layout.html' %}
+
+{% block content %}
+<h1>Show Movie</h1>
+<p>{{ message }}</p>
+<h4>{{ movie.title }}</h4>
+<p>{{ movie.year }}</p>
+<a href="{{ movie.imdb }}">Enlace IMDB</a>
+<a href="/">Back</a>
+{% endblock %}
